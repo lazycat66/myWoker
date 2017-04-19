@@ -18,10 +18,23 @@
   "homepage": "https://github.com/lazycat66/myWoker#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "jshint": "^2.9.4",
+    "mongodb": "2.2.19",
     "morgan": "^1.8.1",
-    "serve-favicon": "^2.4.2"
+    "serve-favicon": "^2.4.2",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1"
   }
 }
