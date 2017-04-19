@@ -1,0 +1,88 @@
+{
+  "-W041": false,
+  "browser": true,
+  "bitwise": true,
+  //禁用位运算符
+  "curly": false,
+  //循环或者条件语句必须使用花括号包围
+  "eqeqeq": false,
+  //强制使用三等号
+  "eqnull": true,
+  //允许==null
+  "strict": false,
+  "elision": true,
+  "funcscope": true,
+  //匿名函必须立即调用
+  "undef": true,
+  //变量未定义
+  "unused": false,
+  //变量未使用
+  "quotmark": false,
+  //为  true  时，禁止单引号和双引号混用
+
+
+  "asi": false,
+  //  为true时不严格验证";"
+  "sub": true,
+  //  person['name']  vs.  person.name.
+  "boss": true,
+  "loopfunc": true,
+  //允许循环中定义函数
+
+
+
+  "globalstrict": true,
+  //允许全局严格模式
+  "maxparams": 20,
+  //最多参数个数
+  "maxdepth": 6,
+  //最大嵌套深度
+  "indent": true,
+  //代码缩进
+  "latedef": "nofunc",
+  //禁止定义之前使用变量，忽略  function  函数声明
+  "maxerr": 50,
+  //JSHint中断扫描前允许的最大错误数
+  "newcap": false,
+  //构造函数名首字母必须大写
+  "expr": true,
+  "nonew": false,
+  "plusplus": false,
+  //禁止使用++和--
+  "multistr": true,
+  //允许直接引用的全局变量
+  "globals": {
+    "MOFANGLOG": true,
+    "node": true,
+    "module": true,
+    "require": true,
+    "ko": true,
+    "jQuery": true,
+    "Zepto": true,
+    "window": true,
+    "MOFANG": true,
+    "document": true,
+    "$": true,
+    "BMap": true,
+    "BMAP_STATUS_SUCCESS": true,
+    "redirect": true,
+    "set_statistics": true,
+    "Image": true,
+    "alert": true,
+    "console": true,
+    "setInterval": true,
+    "clearInterval": true,
+    "setTimeout": true,
+    "clearTimeout": true,
+    "mfGlobal": true,
+    "io": true,
+    "define": true,
+    //requirejs  中的关键字
+    "angular": true,
+    "_hmt": true,
+    "indexedDB": true,
+    "SockJS": true,
+    "Stomp": true,
+    "UE": true
+  }
+}

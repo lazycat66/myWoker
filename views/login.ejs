@@ -1,18 +1,15 @@
 <%- include header %>
-<p>
-    <%= content %>
-</p>
-<% if(list.length > 0){ %>
-    <ul>
-        <% for(var i=0; i < list.length; i++){ %>
-            <li>
-                <%= list[i] %>
-            </li>
-        <% } %>
-    </ul>
-<% } else { %>
+<form>
     <p>
-        small list
+        <label>username</label>
+        <input type="text" name="username"/>
     </p>
-<% } %>
+    <p>
+        <label>password</label>
+        <input type="password" name="password"/>
+    </p>
+    <p>
+        <button type="submit">login in</button>
+    </p>
+</form>
 <%- include footer %>

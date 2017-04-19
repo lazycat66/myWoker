@@ -4,17 +4,10 @@ module.exports = function (app) {
     });
 
     app.get('/login', function (req, res) {
-        res.render('login', {
-            title: 'login',
-            content: 'test list',
-            list: [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ]
-        });
+        res.render('login', {title: 'Login'});
+    });
+
+    app.get('/register', function (req, res) {
+        res.send('coming soon...');
     });
 };
