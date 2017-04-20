@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "Six Blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tranning myself website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,12 +18,16 @@
   "homepage": "https://github.com/lazycat66/myWoker#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "config-lite": "^2.0.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^1.3.2",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "express-formidable": "^1.0.0",
     "express-session": "^1.15.2",
+    "express-winston": "^2.3.0",
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -32,10 +36,18 @@
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "jshint": "^2.9.4",
+    "marked": "^0.3.6",
+    "md5": "^2.2.1",
+    "moment": "^2.18.1",
     "mongodb": "2.2.19",
+    "mongolass": "^2.4.5",
     "morgan": "^1.8.1",
+    "multer": "^1.3.0",
+    "objectid-to-timestamp": "^1.3.0",
     "serve-favicon": "^2.4.2",
-    "supervisor": "^0.12.0"
+    "sha1": "^1.1.1",
+    "supervisor": "^0.12.0",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

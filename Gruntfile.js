@@ -19,6 +19,13 @@ module.exports = function (grunt) {
         //         }
         //     }
         // },
+        autoprefixer: {
+            dist: {
+                files: {
+                    'build/style.css': 'style.css'
+                }
+            }
+        },
         less: {
             main: {
                 expand: true,
@@ -50,9 +57,9 @@ module.exports = function (grunt) {
         },
         watch: {
             client: { //用于监听less文件,当改变时自动编译成css文件
-                files: ['public/less/*.less'],
+                files: ['public/less/**.less'],
                 tasks: [
-                    'clean:css', 'cssmin', 'less'
+                    'clean:css', 'cssmin', 'less', 'autoprefixer'
                 ],
                 options: {
                     livereload: true
@@ -75,6 +82,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     // grunt.registerTask('default', ['concat', 'cssmin', 'uglify']);
     grunt.registerTask('default', ['clean:css', 'cssmin', 'less', 'watch']);

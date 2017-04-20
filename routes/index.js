@@ -1,13 +1,10 @@
 module.exports = function (app) {
     app.get('/', function (req, res) {
-        res.render('index', {title: 'Home'});
-    });
+        res.redirect('/posts');
+    })
+    app.use('/signup', require('./signup'));
+    app.use('/signin', require('./signin'));
+    app.use('/signout', require('./signout'));
+    app.use('/posts', require('./posts'));
 
-    app.get('/login', function (req, res) {
-        res.render('login', {title: 'Login'});
-    });
-
-    app.get('/register', function (req, res) {
-        res.send('coming soon...');
-    });
 };

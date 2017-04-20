@@ -5,14 +5,30 @@ body {
 }
 
 header {
-    padding: 10px 100px;
+    padding: 0 20px;
+    height: 100%;
     color: #fff;
     background: #00beff;
+
+    a {
+        text-decoration: none;
+        font-style: normal;
+        color: #fff;
+        font-size: 36px;
+    }
+
+    .notice {
+        height: 30px;
+        font-size: 12px;
+        color: #bde3f1;
+    }
 }
 
 nav {
-    padding: 10px 100px;
-    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d0d0d0;
 
     span {
         padding: 15px 20px;
@@ -24,6 +40,7 @@ nav {
         a {
             text-decoration: none;
             color: #00beff;
+            cursor: pointer;
 
             &:hover {
                 color: #f60;

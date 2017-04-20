@@ -1,0 +1,37 @@
+<%- include('header') %>
+<div class="signup">
+    <form method="post" enctype="multipart/form-data">
+        <p class="panel">
+            <label>username</label>
+            <input placeholder="username" type="text" name="name">
+        </p>
+        <p class="panel">
+            <label>password</label>
+            <input placeholder="password" type="password" name="password">
+        </p>
+        <p class="panel">
+            <label>confirm</label>
+            <input placeholder="password" type="password" name="repassword">
+        </p>
+        <p class="panel">
+            <label>gender</label>
+            <select name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="secret">-</option>
+            </select>
+        </p>
+        <!-- <p class="panel">
+            <label>avatar</label>
+            <input type="file" name="avatar">
+        </p> -->
+        <p class="panel high">
+            <label>introduce</label>
+            <textarea name="introduce" rows="5" resize="false" value="user.introduce"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" value="submit"/>
+        </p>
+    </form>
+</div>
+<%- include('footer') %>
