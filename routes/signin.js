@@ -6,16 +6,16 @@ var UserModel = require('../models/user');
 var checkNotLogin = require('../middlewares/check').checkNotLogin;
 
 router.get('/', checkNotLogin, function (req, res, next) {
-    res.render('signin', {title: 'sigin in'});
+    res.render('signin', { title: 'sigin in' });
 });
 
 router.post('/', checkNotLogin, function (req, res, next) {
-    console.log(req)
-    var name = req.fields.name;
+    console.log('in' + req.fields.username)
+    console.log('in' + req.fields.password)
+    var name = req.fields.username;
     var password = req.fields.password;
 
     UserModel.getUserByName(name).then(function (user) {
-        console.log(user)
         if (!user) {
             req.flash('error', '用户不存在')
             return res.redirect('back');

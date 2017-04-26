@@ -1,17 +1,17 @@
 <%- include('header') %>
-<div class="signin">
-    <form method="post">
-        <p class="panel">
-            <label>username</label>
-            <input placeholder="username" type="text" name="name">
-        </p>
-        <p class="panel">
-            <label>password</label>
-            <input placeholder="password" type="password" name="password">
-        </p>
-        <p class="submit">
-            <input type="submit" class="ui button fluid" value="sign in">
-        </p>
-    </form>
-</div>
-<%- include('footer') %>
+    <div class="signin">
+        <form method="post">
+            <p class="panel">
+                <label>username</label>
+                <input placeholder="username" type="text" name="username">
+            </p>
+            <p class="panel">
+                <label>password</label>
+                <input placeholder="password" type="password" name="password">
+            </p>
+            <p class="submit">
+                <input type="submit" value="signin">
+            </p>
+        </form>
+    </div>
+    <%- include('footer') %>

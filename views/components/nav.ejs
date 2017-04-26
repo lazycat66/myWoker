@@ -1,10 +1,10 @@
 <nav class="nav">
     <% if (user) { %>
         <span>
-            <a class="item" href="/posts?author=<%= user._id %>">个人主页</a>
+            <a class="item" href="/posts?author=<%= user._id %>">list</a>
         </span>
         <span>
-            <a class="item" href="/posts/create">Post</a>
+            <a class="item" href="/posts/create">create</a>
         </span>
         <span>
             <a class="item" href="/signout">signout</a>

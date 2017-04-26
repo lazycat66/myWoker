@@ -8,7 +8,7 @@ var UserModel = require('../models/user');
 var checkNotLogin = require('../middlewares/check').checkNotLogin;
 
 router.get('/', checkNotLogin, function (req, res, next) {
-    res.render('signup', {title: 'Welcome to Six Blog'});
+    res.render('signup', { title: 'Welcome to Six Blog' });
 });
 
 router.post('/', checkNotLogin, function (req, res, next) {
@@ -40,7 +40,7 @@ router.post('/', checkNotLogin, function (req, res, next) {
         }
     } catch (e) {
         // 注册失败，异步删除上传的头像
-        fs.unlink(req.files.avatar.path);
+        // fs.unlink(req.files.avatar.path);
         req.flash('error', e.message);
         return res.redirect('/signup');
     }

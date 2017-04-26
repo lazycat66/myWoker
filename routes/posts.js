@@ -4,7 +4,7 @@ var router = express.Router();
 var checkLogin = require('../middlewares/check').checkLogin;
 
 router.get('/', function (req, res, next) {
-    res.render('posts', {title: 'Six Blog'});
+    res.render('posts', { title: 'Six Blog' });
 });
 
 router.post('/', checkLogin, function (req, res, next) {
