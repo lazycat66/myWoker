@@ -1,0 +1,20 @@
+<%- include('header') %>
+<div>
+    <div>
+        <a href="/post?author=<%= user._id %>" data-title="<%= user.name%> | <%= ({male:'男',femal:'女',secret:'保密'})[user.hender] %>" data-content="<%= user.introduce %>">img</a>
+    </div>
+    <div>
+        <form method="post" action="/posts">
+            <div>
+                <label>title</label>
+                <input type="text" name="title"/>
+            </div>
+            <div>
+                <label>content</label>
+                <textarea name="content" rows="15"></textarea>
+            </div>
+            <button type="submit" value="post"></button>
+        </form>
+    </div>
+</div>
+<%- include('footer') %>
